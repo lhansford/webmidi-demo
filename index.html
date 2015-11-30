@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <section class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <select class="form-control" id="midi-port"></select>
+        <button class="btn" id="play">Play Melody</button>
+        <button class="btn" id="play-original">Play Original</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="reset">Reset</button>
+        <br />
+        <br />
+        <label>Song</label>
+        <select class="form-control" id="song">
+          <option value="new">New</option>
+          <option value="two-tigers">Two Tigers</option>
+          <option value="twinkle-star">Twinkle Twinkle</option>
+        </select>
+        <br />
+        <br />
+        <label>Record</label>
+        <input type="checkbox" id="sendToAPI" />
+        <br />
+
+        <p>Octave: <span id="octave"></span></p>
+
+        <label>Tempo</label>
+        <input id="tempo" type="range" min="50" max="500" value="150"/>
+        <br />
+        <label>Detune</label>
+        <input id="detune" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>VCF Cutoff</label>
+        <input id="cutoff" type="range" min="0" max="127" value="30"/>
+        <br />
+        <label>Delay Time</label>
+        <input id="delay-time" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>Delay Feedback</label>
+        <input id="delay-feedback" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>Portamento</label>
+        <input id="portamento" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>LFO Rate</label>
+        <input id="lfoRate" type="range" min="0" max="127" value="30"/>
+        <br />
+        <label>LFO Pitch Int.</label>
+        <input id="lfoPitch" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>LFO Cutoff Int.</label>
+        <input id="lfoCutoff" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>Attack</label>
+        <input id="attack" type="range" min="0" max="127" value="0"/>
+        <br />
+        <label>Decay/Release</label>
+        <input id="decay" type="range" min="0" max="127" value="20"/>
+        <br />
+        <label>Sustain</label>
+        <input id="sustain" type="range" min="0" max="127" value="20"/>
+        <br />
+      </div>
+    </section>
+  </body>
+</html>
